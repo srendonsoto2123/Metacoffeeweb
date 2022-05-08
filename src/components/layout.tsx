@@ -6,10 +6,9 @@ import Header from './header'
 interface Props {
    title?: string
    children?: ReactNode
-   moralis: boolean
 }
 
-const Layout = ({ title = "Titulo por defecto", children, moralis }: Props) => {
+const Layout = ({ title = "Titulo por defecto", children }: Props) => {
    return (
       <>
          <Head>
