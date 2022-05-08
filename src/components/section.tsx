@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react';
 
 interface Props {
    children: ReactNode
-   href?: StaticImageData | string
+   href?: string 
    positionImage?: 'left' | 'right'
    rotateImage?: 'left' | 'right' | 'none'
    key?: string

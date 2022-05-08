@@ -17,9 +17,9 @@ const Home: NextPage = () => {
    return (
       <Layout title="Metacoffeecoin">
          <div className="bg-amber-50">
-            <Image src={fondo} alt="Fondo cafetero" objectFit="contain" />
+            <Image src="/images/img-fondoCafetero.png" alt="Fondo cafetero" objectFit="cover" />
             <div className="flex flex-col gap-2 px-2">
-               <Section href={imgArriero} key="historia">
+               <Section href="/images/img-arriero.png" key="historia">
                   <Title title='Un poco de historia' id="historia" />
                   <span className="text-center"><strong><em>“El café es la segunda bebida más consumida en
                   el mundo, después del agua”.</em></strong></span>
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
                   exportaban los primeros sacos producidos en la zona oriental,
                   desde la aduana de Cúcuta. </p>
                </Section>
-               <Section href={imgCafetera} positionImage='right' rotateImage="left">
+               <Section href="/images/img-cafetera.png" positionImage='right' rotateImage="left">
                   <div className="text-center">
                      <article className="mb-2">
                         <Title title='¡Bienvenido a Metacoffeecoin!' />
@@ -63,7 +63,7 @@ const Home: NextPage = () => {
                      </article>
                   </div>
                </Section>
-               <Section href={sacoCafeLogo} rotateImage="none">
+               <Section href="/images/saco-cafeLogo.png" rotateImage="none">
                   <div className="basis-3/5 text-center">
                      <Title title="¿Cómo jugar?" />
                      <p className="text-left px-4 lg:px-10">Los jugadores de MetaCoffeeCoin disfrutarán de todas las
