@@ -7,8 +7,8 @@ import Market from '../components/market';
 const MarketPlace: NextPage = () => {
    return (
       <MoralisProvider 
-         appId={ process.env.NEXT_PUBLIC_APPID }
-         serverUrl={ process.env.NEXT_PUBLIC_SERVERURL }
+         appId={ process.env.NEXT_PUBLIC_APPID ?? undefined }
+         serverUrl={ process.env.NEXT_PUBLIC_SERVERURL ?? undefined }
          initializeOnMount={false}
       >
          <Market />
