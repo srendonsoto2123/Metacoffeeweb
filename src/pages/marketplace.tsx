@@ -7,9 +7,9 @@ import Market from '../components/market';
 const MarketPlace: NextPage = () => {
    return (
       <MoralisProvider 
-         appId={ process.env.NEXT_PUBLIC_APPID ?? undefined }
-         serverUrl={ process.env.NEXT_PUBLIC_SERVERURL ?? undefined }
-         initializeOnMount={false}
+         appId={ process.env.NEXT_PUBLIC_APPID ?? "App id undefined fallback" }
+         serverUrl={ process.env.NEXT_PUBLIC_SERVERURL ?? "Server url undefined fallback" }
+         initializeOnMount
       >
          <Market />
       </MoralisProvider>
