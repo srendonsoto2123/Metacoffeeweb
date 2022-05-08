@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Navbar from './navbar.tsx'
-import NavItem from './navItem.tsx'
+import Navbar from './navbar'
+import NavItem from './navItem'
 
 import logoTitle from '../../public/images/titulo-metacoffe.png';
 import logoImg from '../../public/images/logo-metacoffe.png';

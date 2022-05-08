@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
 import { MoralisProvider } from 'react-moralis';
 
-import Layout from '../components/layout.tsx';
-import Market from '../components/market.tsx';
+import Layout from '../components/layout';
+import Market from '../components/market';
 
 const realizarCambios = (e) => {
    e.preventDefault();

@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React, { ReactNode } from 'react';
 
-import Header from './header.tsx'
+import Header from './header'
 
 interface Props {
    title?: string

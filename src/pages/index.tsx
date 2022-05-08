@@ -2,10 +2,10 @@ import type { NextPage } from 'next';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 
-import Layout from '../components/layout.tsx';
-import Section from '../components/Section.tsx';
-import Card from '../components/card.tsx';
-import Title from '../components/title.tsx';
+import Layout from '../components/layout';
+import Section from '../components/section';
+import Card from '../components/card';
+import Title from '../components/title';
 
 import fotoAndrea from '../../public/images/foto-andrea.png'
 import imgArriero from '../../public/images/img-arriero.png'
