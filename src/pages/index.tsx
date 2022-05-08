@@ -17,7 +17,7 @@ const Home: NextPage = () => {
    return (
       <Layout title="Metacoffeecoin">
          <div className="bg-amber-50">
-            <marquee behavior="scroll"className="text-base py-2 font-semibold
+            <marquee behavior="scroll" className="text-base py-2 font-semibold
             bg-red-700 text-white lg:text-2xl lg:py-3">Próximamente contratos
             cripto</marquee>
             <Image src={fondo} alt="Fondo cafetero" objectFit="contain" />
