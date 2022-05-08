@@ -17,7 +17,7 @@ const Home: NextPage = () => {
    return (
       <Layout title="Metacoffeecoin">
          <div className="bg-amber-50">
-            <Image src="/images/img-fondoCafetero.png" alt="Fondo cafetero" objectFit="cover" />
+            <Image src={fondo} alt="Fondo cafetero" objectFit="contain" />
             <div className="flex flex-col gap-2 px-2">
                <Section href="/images/img-arriero.png" key="historia">
                   <Title title='Un poco de historia' />
