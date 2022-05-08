@@ -11,7 +11,7 @@ interface Props {
 
 import imgArriero from '../../public/images/img-arriero.png';
 
-const Section: ReactNode = ({ children, href, positionImage = 'left', rotateImage = 'right', key }: Props) => {
+const Section = ({ children, href, positionImage = 'left', rotateImage = 'right', key }: Props) => {
    return (
       <>
          <section key={key} className={`flex flex-col-reverse gap-8 ${ positionImage ===
