@@ -1,5 +1,4 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 
@@ -22,7 +21,7 @@ const Home: NextPage = () => {
             bg-red-700 text-white lg:text-2xl lg:py-3">Próximamente contratos
             cripto</marquee>
             <Image src={fondo} alt="Fondo cafetero" objectFit="contain" />
-            <div className="flex flex-col gap-5 px-2">
+            <div className="flex flex-col gap-2 px-2">
                <Section href={imgArriero} key="historia">
                   <Title title='Un poco de historia' id="historia" />
                   <span className="text-center"><strong><em>“El café es la segunda bebida más consumida en
@@ -31,7 +30,8 @@ const Home: NextPage = () => {
                   África, donde el café se consumía en infusiones calientes o
                   también masticando sus hojas, pero fueron los árabes, quienes
                   son los responsables de su expansión, primero por todo el
-                  mundo árabe llegando a Turquía en 1554. En el siglo XVII
+                  mundo árabe llegando a Turquía en 1554.</p>
+                  <p className="hidden lg:block">En el siglo XVII
                   entró a Europa por el puerto de Venecia y se expandió por el
                   continente para finalmente llegar a América hacia el siglo
                   XVIII. Los responsables de esta expansión por nuevos

@@ -11,13 +11,13 @@ interface Props {
 
 import imgArriero from '../../public/images/img-arriero.png';
 
-const Section = ({ children, href, positionImage = 'left', rotateImage = 'right', key }: Props) => {
+const Section: ReactNode = ({ children, href, positionImage = 'left', rotateImage = 'right', key }: Props) => {
    return (
       <>
          <section key={key} className={`flex flex-col-reverse gap-8 ${ positionImage ===
          'left' ? 'lg:flex-row' : 'lg:flex-row-reverse' } lg:justify-center
-         items-center bg-amber-100 border-double border-4
-         border-amber-800 rounded-xl pb-6`}>
+         items-center bg-amber-100 border-dashed border-2
+         border-amber-800 rounded-sm pb-6`}>
             {href !== undefined &&
             <span className={`relative origin-center ${ rotateImage === 'left' &&
             "-rotate-12" } ${ rotateImage === 'right' && "rotate-12" }`} >
