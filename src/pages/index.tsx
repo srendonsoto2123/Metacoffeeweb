@@ -20,7 +20,7 @@ const Home: NextPage = () => {
             <Image src="/images/img-fondoCafetero.png" alt="Fondo cafetero" objectFit="cover" />
             <div className="flex flex-col gap-2 px-2">
                <Section href="/images/img-arriero.png" key="historia">
-                  <Title title='Un poco de historia' id="historia" />
+                  <Title title='Un poco de historia' />
                   <span className="text-center"><strong><em>“El café es la segunda bebida más consumida en
                   el mundo, después del agua”.</em></strong></span>
                   <p className="text-left px-4 lg:px-10 mt-4"> Toda esta aventura comienza unos siglos atrás en Etiopía,
