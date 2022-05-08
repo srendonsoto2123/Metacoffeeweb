@@ -26,8 +26,6 @@ const Section = ({ children, href, positionImage = 'left', rotateImage = 'right'
                   alt="Imagen de arriero"
                   width={220}
                   height={275}
-                  maxWidth={300}
-                  maxHeigh={370}
                />
             </span>}
             <div className="lg:basis-3/5 text-center">
