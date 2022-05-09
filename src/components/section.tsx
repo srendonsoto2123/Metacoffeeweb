@@ -6,18 +6,17 @@ interface Props {
    href?: string 
    positionImage?: 'left' | 'right'
    rotateImage?: 'left' | 'right' | 'none'
-   key?: string
 };
 
 import imgArriero from '../../public/images/img-arriero.png';
 
-const Section = ({ children, href, positionImage = 'left', rotateImage = 'right', key }: Props) => {
+const Section = ({ children, href, positionImage = 'left', rotateImage = 'right' }: Props) => {
    return (
       <>
-         <section key={key} className={`flex flex-col-reverse gap-8 ${ positionImage ===
+         <section className={`flex flex-col-reverse gap-8 ${ positionImage ===
          'left' ? 'lg:flex-row' : 'lg:flex-row-reverse' } lg:justify-center
          items-center bg-amber-100 border-dashed border-2
-         border-amber-800 rounded-sm pb-6`}>
+         border-amber-800 rounded-sm pb-6 lg:w-4/5`}>
             {href !== undefined &&
             <span className={`relative origin-center ${ rotateImage === 'left' &&
             "-rotate-12" } ${ rotateImage === 'right' && "rotate-12" }`} >

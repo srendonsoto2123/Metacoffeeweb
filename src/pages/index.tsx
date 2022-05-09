@@ -18,8 +18,8 @@ const Home: NextPage = () => {
       <Layout title="Metacoffeecoin">
          <div className="bg-amber-50">
             <Image src={fondo} alt="Fondo cafetero" objectFit="contain" />
-            <div className="flex flex-col gap-2 px-2">
-               <Section href="/images/img-arriero.png" key="historia">
+            <div className="flex flex-col gap-2 px-2 items-center">
+               <Section href="/images/img-arriero.png">
                   <Title title='Un poco de historia' />
                   <span className="text-center"><strong><em>“El café es la segunda bebida más consumida en
                   el mundo, después del agua”.</em></strong></span>
