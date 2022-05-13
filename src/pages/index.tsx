@@ -23,12 +23,12 @@ const Home: NextPage = () => {
                   <Title title='Un poco de historia' />
                   <span className="text-center"><strong><em>“El café es la segunda bebida más consumida en
                   el mundo, después del agua”.</em></strong></span>
-                  <p className="text-left px-4 lg:px-10 mt-4"> Toda esta aventura comienza unos siglos atrás en Etiopía,
+                  <p className="inline text-left px-4 lg:px-10 mt-4"> Toda esta aventura comienza unos siglos atrás en Etiopía,
                   África, donde el café se consumía en infusiones calientes o
                   también masticando sus hojas, pero fueron los árabes, quienes
                   son los responsables de su expansión, primero por todo el
                   mundo árabe llegando a Turquía en 1554.</p>
-                  <p className="hidden lg:block">En el siglo XVII
+                  <p className="hidden sm:block">En el siglo XVII
                   entró a Europa por el puerto de Venecia y se expandió por el
                   continente para finalmente llegar a América hacia el siglo
                   XVIII. Los responsables de esta expansión por nuevos
