@@ -9,7 +9,7 @@ interface Props {
   children: ReactNode;
 }
 
-export default function LayoutMarket({ title, children }: Props) {
+export default function Layout({ title, children }: Props) {
   return (
     <>
       <Head>
