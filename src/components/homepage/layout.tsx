@@ -21,7 +21,7 @@ const Layout = ({ title = 'Titulo por defecto', children }: Props) => {
         <title>{title}</title>
       </Head>
       <Header />
-      <main>{children}</main>
+      <main className='bg-amber-50'>{children}</main>
     </>
   );
 };

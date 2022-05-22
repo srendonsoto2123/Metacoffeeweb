@@ -1,18 +1,15 @@
-import Moralis from 'moralis/types';
 import { useEffect, useState } from 'react';
-import { useMoralis, useNativeBalance } from 'react-moralis';
+import { useNativeBalance } from 'react-moralis';
 import Container from '../container';
 import Title from './title';
 import Token from './token';
 
 export default function MainBalance() {
+
   const {
     getBalances,
-    data: balance,
     nativeToken
   } = useNativeBalance({ chain: 'rinkeby' });
-  const { user } = useMoralis();
-  const value = user?.get('ethAddress');
 
   const [balanceETH, setBalanceETH] = useState<string | undefined>('');
 
@@ -32,9 +29,10 @@ export default function MainBalance() {
         <Token
           tokenName={nativeToken?.name}
           abbr={'ETH'}
-          amount={(balance.balance as unknown as number) / 10 ** 18}
+          amount={(balanceETH as unknown as number / 10 ** 18).toString()}
         />
       </div>
     </Container>
   );
 }
+

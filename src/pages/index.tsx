@@ -6,24 +6,20 @@ import Section from '../components/homepage/section';
 import Title from '../components/homepage/title';
 
 import fondo from '../../public/images/img-fondoCafetero.png';
+import Cita from '../components/homepage/cita';
+import Footer from '../components/homepage/footer';
+import Member from '../components/homepage/member';
 
 const Home: NextPage = () => {
   return (
     <Layout title="Metacoffeecoin">
-      <div className="bg-amber-50">
+      <div>
         <Image src={fondo} alt="Fondo cafetero" objectFit="contain" />
         <div className="flex flex-col gap-2 px-2 items-center">
           <Section href="/images/img-arriero.png">
             <Title title="Un poco de historia" />
-            <span className="text-center">
-              <strong>
-                <em>
-                  “El café es la segunda bebida más consumida en el mundo,
-                  después del agua”.
-                </em>
-              </strong>
-            </span>
-            <p className="inline text-left px-4 lg:px-10 mt-4">
+            <Cita> “El café es la segunda bebida más consumida en el mundo, después del agua”.</Cita>
+            <p className="block text-justify px-4 lg:px-8 mt-4">
               {' '}
               Toda esta aventura comienza unos siglos atrás en Etiopía, África,
               donde el café se consumía en infusiones calientes o también
@@ -31,7 +27,7 @@ const Home: NextPage = () => {
               responsables de su expansión, primero por todo el mundo árabe
               llegando a Turquía en 1554.
             </p>
-            <p className="hidden sm:block">
+            <p className="hidden sm:block text-justify px-4 lg:px-8 mt-4">
               En el siglo XVII entró a Europa por el puerto de Venecia y se
               expandió por el continente para finalmente llegar a América hacia
               el siglo XVIII. Los responsables de esta expansión por nuevos
@@ -62,12 +58,10 @@ const Home: NextPage = () => {
                 </p>
                 <span>
                   <strong>
-                    <em>
-                      “Cultiva y recolecta tu café virtual y disfrútalo en tu
-                      taza real”
-                    </em>
+                    <em></em>
                   </strong>
                 </span>
+                <Cita> “Cultiva y recolecta tu café virtual y disfrútalo en tu taza real” </Cita> 
               </article>
               <article>
                 <Title title="Juega y gana" />
@@ -99,6 +93,19 @@ const Home: NextPage = () => {
           </Section>
         </div>
       </div>
+      <div className="w-4/5 mx-auto">
+         <Title title="Miembros del equipo"/>
+         <div className="flex flex-wrap justify-center items-center">
+         <Member img="/images/foto-jose.png" cargo="Ceo Fundador" title="Analista económico" name="Jose Luis Cifuentes" redSocial={''}/>
+          <Member img="/images/foto-andrea.png" cargo="Ceo Cofundadora" title="desarrollador" name="Andrea Ramirez" redSocial={''} />
+          <Member img="/images/foto-camilo.png" cargo="Cofundador" title="Cofundador" name="Jose Camilo Cifuentes" redSocial={''} />
+          <Member img="/images/foto-jorgeIvan.png" title="desarrollador" name="Jorge Cifuentes" redSocial={''}/>
+          <Member img="/images/foto-stiven.png" title="desarrollador" name="Jhon Stiven Cardona" redSocial={''}/>
+          <Member img="/images/foto-miguel.png" title="desarrollador" name="Miguel Angel Giraldo" redSocial={''}/>
+          <Member img="/images/foto-sebastian.png" title="desarrollador" name="Sebastian Rendon" redSocial={''}/>
+          </div>
+      </div>
+      <Footer />
     </Layout>
   );
 };

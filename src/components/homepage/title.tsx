@@ -15,6 +15,7 @@ export default function Title({ title }: Props) {
          border-amber-800
          py-3
          rounded-lg
+         text-center
       "
     >
       {title}

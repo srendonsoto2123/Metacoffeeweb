@@ -7,14 +7,15 @@ import Transaccion from './transaccion';
 export default function MainTransacciones() {
   const [transacciones, setTransacciones] = useState<any>();
 
-  const { user } = useMoralis();
+  const { user, isInitialized } = useMoralis();
   const BASE_URL = 'https://rinkeby.etherscan.io/tx/';
 
   const Web3Api = useMoralisWeb3Api();
 
   useEffect(() => {
-    fetchTransactions();
-  }, []);
+    isInitialized && fetchTransactions();
+    console.log(isInitialized)
+  }, [isInitialized]);
 
   const fetchTransactions = async () => {
     const data = await Web3Api.account.getTransactions({
