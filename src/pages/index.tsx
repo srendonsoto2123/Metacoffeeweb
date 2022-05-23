@@ -93,7 +93,7 @@ const Home: NextPage = () => {
           </Section>
         </div>
       </div>
-      <div className="w-4/5 mx-auto">
+      <div className="w-4/5 mx-auto" id="members">
          <Title title="Miembros del equipo"/>
          <div className="flex flex-wrap justify-center items-center">
          <Member img="/images/foto-jose.png" cargo="Ceo Fundador" title="Analista económico" name="Jose Luis Cifuentes" redSocial={''}/>
