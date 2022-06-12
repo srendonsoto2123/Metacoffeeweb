@@ -6,7 +6,7 @@ interface Props {
 
 export default function Cita({ children }: Props) {
    return (
-      <strong className="text-justify">
+      <strong className="block text-center">
          <em>
             {children}
          </em>
